@@ -1,4 +1,5 @@
 import SideBar from "@/components/SideBar";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -18,8 +19,7 @@ export default function Home() {
           <p>Projects section.</p>
         </section>
         <section id="contact" className="section">
-          <h1>Contact</h1>
-          <p>Contact section.</p>
+          <Contact />
         </section>
       </main>
     </>

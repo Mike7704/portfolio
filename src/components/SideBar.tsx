@@ -14,7 +14,7 @@ export default function SideBar() {
         <ul>
           <li>
             <Link href="#home">
-              <i className="bx bx-home"></i> Home
+              <i className="bx bx-home"></i>Home
             </Link>
           </li>
           <li>

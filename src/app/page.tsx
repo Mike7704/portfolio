@@ -1,26 +1,20 @@
 import SideBar from "@/components/SideBar";
+import Home from "@/components/Home";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <SideBar />
       <main>
-        <section id="home" className="section">
-          <h1>Home</h1>
-          <p>Home section</p>
-        </section>
-        <section id="about" className="section">
-          <h1>About</h1>
-          <p>About section.</p>
-        </section>
-        <section id="projects" className="section">
-          <h1>Projects</h1>
-          <p>Projects section.</p>
-        </section>
-        <section id="contact" className="section">
-          <Contact />
-        </section>
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
       </main>
     </>
   );

@@ -1,9 +1,10 @@
 import Image from "next/image";
+import "@/styles/about.css";
 
 export default function About() {
   return (
     <section id="about" className="section">
-      <h1>About Me</h1>
+      <h2>About Me</h2>
       <div className="about-container">
         <div className="about-image">
           <Image src={"/profile-pic.png"} width={256} height={256} alt="profile image" />
@@ -24,7 +25,7 @@ export default function About() {
         </div>
       </div>
       <div className="about-skills">
-        <h2>Technical Skills</h2>
+        <h3>Technical Skills</h3>
         <ul>
           <li>Programming languages: Java, JavaScript, HTML, CSS, Python</li>
           <li>Development frameworks: JavaFX, React, Next.js, PostgreSQL, Express.js, Node.js, Tailwind CSS</li>
@@ -32,7 +33,7 @@ export default function About() {
         </ul>
       </div>
       <div className="about-links">
-        <h2>Connect with Me</h2>
+        <h3>Connect with Me</h3>
         <ul>
           <li>
             <a href="https://github.com/Mike7704" target="_blank">

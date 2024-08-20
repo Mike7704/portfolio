@@ -7,7 +7,7 @@ export default function About() {
       <h2>About Me</h2>
       <div className="about-container">
         <div className="about-image">
-          <Image src={"/profile-pic.png"} width={256} height={256} alt="profile image" />
+          <Image src={"/images/profile-pic.png"} width={256} height={256} alt="profile image" />
         </div>
         <div className="about-text">
           <p>Hi, I&apos;m Michael Cowley, a first-class graduate with a passion for software development.</p>

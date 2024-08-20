@@ -7,7 +7,7 @@ export default function SideBar() {
   return (
     <div className="nav-sidebar">
       <div className="profile-header">
-        <Image className="profile-pic" src={"/profile-pic.png"} width={256} height={256} alt="profile image" />
+        <Image className="profile-pic" src={"/images/profile-pic.png"} width={256} height={256} alt="profile image" />
         <h2 className="profile-name">Michael Cowley</h2>
       </div>
       <nav>

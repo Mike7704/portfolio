@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import AnimateIn from "@/components/AnimateIn";
-import "@/styles/projects.css";
+import styles from "@/styles/projects.module.css";
 
 export interface Project {
   id: number;
@@ -14,19 +14,19 @@ export interface Project {
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <AnimateIn classNameStyle="animation-container">
-      <Link className="card-container" href={`/pizzas/${project.id}`}>
-        <div className="container-overlay" />
-        <div className="image-container">
+    <AnimateIn classNameStyle={styles.animationContainer}>
+      <Link className={styles.cardContainer} href={`${project.link}`}>
+        <div className={styles.containerOverlay} />
+        <div className={styles.imageContainer}>
           <Image
-            className="image"
+            className={styles.image}
             src={`/images/projects/${project.image_url}.jpg`}
-            width={256}
-            height={256}
+            width={1920}
+            height={1080}
             alt={`${project.title} image`}
           />
         </div>
-        <div className="text-container">
+        <div className={styles.textContainer}>
           <h3>{project.title}</h3>
           <p>{project.description}</p>
         </div>

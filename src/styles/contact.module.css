@@ -1,11 +1,11 @@
-.contact-container {
+.contactContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex: 1;
 }
 
-.info-container {
+.infoContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,7 @@
   gap: 5rem;
 }
 
-.contact-info {
+.contactInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +21,7 @@
   gap: 1rem;
 }
 
-.contact-form {
+.contactForm {
   display: flex;
   flex-direction: column;
   justify-content: center;

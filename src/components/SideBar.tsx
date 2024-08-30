@@ -1,16 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
 import "boxicons/css/boxicons.min.css";
-import "@/styles/sidebar.css";
+import styles from "@/styles/sidebar.module.css";
 
 export default function SideBar() {
   return (
-    <div className="nav-sidebar">
-      <div className="profile-header">
-        <Image className="profile-pic" src={"/images/profile-pic.png"} width={256} height={256} alt="profile image" />
-        <h2 className="profile-name">Michael Cowley</h2>
+    <div className={styles.navSidebar}>
+      <div className={styles.profileHeader}>
+        <Image
+          className={styles.profilePic}
+          src={"/images/profile-pic.png"}
+          width={256}
+          height={256}
+          alt="profile image"
+        />
+        <h2 className={styles.profileName}>Michael Cowley</h2>
       </div>
-      <nav>
+      <nav className={styles.links}>
         <ul>
           <li>
             <Link href="#home">

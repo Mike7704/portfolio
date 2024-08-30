@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import FormSubmitButton from "@/components/FormSubmitButton";
 import { sendMessage } from "@/utils/contact";
-import "@/styles/contact.css";
+import styles from "@/styles/contact.module.css";
 
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -12,11 +12,11 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section">
+    <section className="section">
       <h2>Contact</h2>
-      <div className="contact-container">
-        <div className="info-container">
-          <address className="contact-info">
+      <div className={styles.contactContainer}>
+        <div className={styles.infoContainer}>
+          <address className={styles.contactInfo}>
             <p>
               <i className="bx bx-map" />
               Liverpool, UK
@@ -31,7 +31,7 @@ export default function Contact() {
             </p>
           </address>
           <iframe
-            className="map-container"
+            className={styles.mapContainer}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37999.57330462674!2d-2.9916!3d53.4084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b2121b5b9a6b9%3A0x61a51a1ae3a15a9!2sLiverpool!5e0!3m2!1sen!2suk!4v1677721754455!5m2!1sen!2suk&zoom=6"
             width="500"
             height="300"
@@ -41,7 +41,7 @@ export default function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-        <form className="contact-form" ref={formRef} action={handleSubmit}>
+        <form className={styles.contactForm} ref={formRef} action={handleSubmit}>
           <label htmlFor="name">Your Name:</label>
           <input type="text" id="name" name="name" required />
           <label htmlFor="email">Your Email:</label>

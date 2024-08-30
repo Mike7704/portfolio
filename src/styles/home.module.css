@@ -1,11 +1,11 @@
-#home {
+.homeSection {
   background-image: url("/images/home-bk.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 
-#home .text-container {
+.textContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
   font-weight: bold;
 }
 
-#home .text-container p {
+.textContainer p {
   font-size: 1.5rem;
   font-weight: normal;
 }

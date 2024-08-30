@@ -1,24 +1,24 @@
-#about {
+.aboutSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#about .about-container {
+.aboutContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
 }
 
-#about .about-text {
+.aboutText {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1rem;
 }
 
-#about .about-skills ul {
+.aboutSkills ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;

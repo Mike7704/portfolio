@@ -1,9 +1,9 @@
-import "@/styles/home.css";
+import styles from "@/styles/home.module.css";
 
 export default function Home() {
   return (
-    <section id="home" className="section">
-      <div className="text-container">
+    <section className={`section ${styles.homeSection}`}>
+      <div className={styles.textContainer}>
         <h1>Michael Cowley</h1>
         <p>Software Developer</p>
       </div>

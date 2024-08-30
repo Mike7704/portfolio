@@ -1,15 +1,15 @@
 import Image from "next/image";
-import "@/styles/about.css";
+import styles from "@/styles/about.module.css";
 
 export default function About() {
   return (
-    <section id="about" className="section">
+    <section className={`section ${styles.aboutSection}`}>
       <h2>About Me</h2>
-      <div className="about-container">
-        <div className="about-image">
+      <div className={styles.aboutContainer}>
+        <div className={styles.aboutImage}>
           <Image src={"/images/profile-pic.png"} width={256} height={256} alt="profile image" />
         </div>
-        <div className="about-text">
+        <div className={styles.aboutText}>
           <p>Hi, I&apos;m Michael Cowley, a first-class graduate with a passion for software development.</p>
           <p>
             Throughout my academic journey, I&apos;ve tackled challenging projects and coursework that have strengthened
@@ -24,7 +24,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="about-skills">
+      <div className={styles.aboutSkills}>
         <h3>Technical Skills</h3>
         <ul>
           <li>Programming languages: Java, JavaScript, HTML, CSS, Python</li>
@@ -32,7 +32,7 @@ export default function About() {
           <li>Tools: Eclipse, Visual Studio Code, Git/GitHub</li>
         </ul>
       </div>
-      <div className="about-links">
+      <div className={styles.aboutLinks}>
         <h3>Connect with Me</h3>
         <ul>
           <li>

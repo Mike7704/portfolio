@@ -1,30 +1,93 @@
+.contactSection {
+  justify-content: center;
+  height: 80vh;
+}
+
 .contactContainer {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .infoContainer {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 5rem;
+  gap: 1rem;
+  flex: 1;
+  padding: 3rem 1rem;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contactInfo {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.contactInfo p {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.contactInfo a {
+  color: #0d57a1;
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+.mapContainer {
+  width: 100%;
+  min-height: 20rem;
+  border: none;
+  border-radius: 4px;
 }
 
 .contactForm {
+  background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+  padding: 3rem 1rem;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm textarea {
+  height: 10rem;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #0d57a1;
+  outline: none;
+}
+
+.contactForm button {
+  background-color: #0b3f72;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.contactForm button:hover {
+  background-color: #005bb5;
 }

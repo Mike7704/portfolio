@@ -9,7 +9,7 @@ export default async function Projects() {
   const typedProjects = projects.rows as Project[];
 
   return (
-    <section className="section">
+    <section id="projects" className="section">
       <h2>Projects</h2>
       {projects.rows.length > 0 ? (
         <div className={styles.projectsGrid}>
